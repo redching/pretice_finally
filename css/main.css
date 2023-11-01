@@ -12,5 +12,46 @@ html {
     box-sizing: inherit;
 }
 .outside_div{
+    width: 980px;
+    margin: 0 auto;
+    /* background-color: brown; */
+}
+.t-wordcolor{
+    color: goldenrod;
+}
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.outside_div>header>img.logo{
+    width: 150px;
+    margin-top: 40px;
+    margin-bottom: 20px;
     text-align: center;
 }
+.outside_div>header{
+    text-align: center;
+}
+.outside_div>nav{
+    border-top: 2px solid #8a8000;
+    border-bottom: 2px solid #8a8000;
+    /* background-color: red; */
+    margin-bottom: 20px;
+}
+.outside_div>nav>ul>li{
+    /* background-color: #8a8000; */
+    display: inline-block;
+    height: 70px;
+    width:33%;
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+    line-height: 70px;
+}
+.en_text{
+    color: #8a8000;
+}
+/* .logo{
+    width: 150px;
+} */
