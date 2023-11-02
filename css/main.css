@@ -11,8 +11,12 @@ html {
     -moz-box-sizing: inherit;
     box-sizing: inherit;
 }
+/* body{
+    font-size: 50px;
+} */
 .outside_div{
-    width: 980px;
+    width: 100%;
+    max-width: 980px;
     margin: 0 auto;
     /* background-color: brown; */
 }
@@ -25,12 +29,15 @@ ul{
     padding: 0;
 }
 .outside_div>header>img.logo{
-    width: 150px;
-    margin-top: 40px;
-    margin-bottom: 20px;
+    width: 167px;
+    margin-top: 56px;
+    padding: 0px 15px;
+    /* margin-bottom: 20px; */
     text-align: center;
+
 }
 .outside_div>header{
+    height: 300px;
     text-align: center;
 }
 .outside_div>nav{
@@ -49,9 +56,64 @@ ul{
     font-weight: bold;
     line-height: 70px;
 }
+.outside_div>nav>ul>li>.nav_item{
+    /* background-color: black; */
+    text-decoration: none;
+    color: #000;
+    display: block;
+    position: relative;
+}
+.outside_div>nav>ul>li>.nav_item .nav_child{
+    display: none;
+    position:absolute;
+}
+
+.outside_div>nav>ul>li>.nav_item:hover .nav_child{
+    width: 100%;
+    display: block;
+    background-color: #8a8000;
+    text-decoration: none;
+}
+.outside_div>nav>ul>li>.nav_item:hover>.nav_child a{
+    text-decoration: none;
+    line-height: 20px;
+    font-size: 20px;
+    padding: 20px 15px;
+    color: #fff;
+    background-color: #8a8000;
+    display: block;
+
+}
+.outside_div>nav>ul>li>.nav_item:hover>.nav_child a:hover{
+    background-color: #000;
+}
+.outside_div>nav>ul>li>.nav_item:hover{
+    background-color: #d4d4d4c4;
+}
+
 .en_text{
     color: #8a8000;
+}
+.outside_div>.index_pic{
+    /* background-color: aqua; */
+    /* width: 100%; */
+}
+.dm_pic{
+    width: 100%;
 }
 /* .logo{
     width: 150px;
 } */
+footer>ul>li{
+    display: inline-block;
+}
+/* footer>div{
+   background-color: #8a8000;
+    display: inline-block;
+    float: right;
+}  */
+@media(max-width:992px){
+    .outside_div>nav>ul>li{
+        width: 100%;
+    }
+}
