@@ -28,7 +28,7 @@ ul{
     margin: 0;
     padding: 0;
 }
-.outside_div>header>img.logo{
+.outside_div>header img.logo{
     width: 167px;
     margin-top: 56px;
     padding: 0px 15px;
@@ -46,15 +46,21 @@ ul{
     /* background-color: red; */
     margin-bottom: 20px;
 }
+.outside_div>nav>ul{
+    display: flex;
+}
 .outside_div>nav>ul>li{
     /* background-color: #8a8000; */
-    display: inline-block;
-    height: 70px;
-    width:33%;
+
+    /* display: inline-block;
+    
+    width:33%; */
+    flex: 1;
     text-align: center;
     font-size: 25px;
     font-weight: bold;
     line-height: 70px;
+    height: 70px;
 }
 .outside_div>nav>ul>li>.nav_item{
     /* background-color: black; */
@@ -107,13 +113,92 @@ ul{
 footer>ul>li{
     display: inline-block;
 }
+
 /* footer>div{
    background-color: #8a8000;
     display: inline-block;
     float: right;
 }  */
+
+                                    /* shop.html 的 css */
+.outside_div>.shop_content>.p_content{
+    color: #58595b;;
+    line: height 20px;
+    letter-spacing: 1.5;
+    font-size: 15px;
+    font-weight: bold;
+}
+.outside_div>.item_wrap{
+    font-weight: bold;
+    border: 1px solid #8a8000;
+
+}
+.outside_div>.item_wrap>.item_row{
+    display: flex;
+    padding: 15px;
+}
+.outside_div>.item_wrap>.item_row>div{
+    flex:1
+}
+.item_row>.item_right>.item_title{
+    border-bottom: 1px solid #8a8000;
+    font-weight: bold;
+    font-size: 15px;
+    padding-bottom: 3px;
+}
+.item_row>.item_mid>.item_mid_price{
+    font-weight: bold ;
+    margin-top: 105px;
+}
+.item_row>.item_left{
+    margin-right: -160px;
+}
+.item_row>.item_right>.item_child{
+    display: flex;
+}
+.item_right>.item_child>.item_child_right{
+    flex: 1;
+}
+.item_right>.item_child>.item_child_left{
+    flex: 1;
+}
+.item_right>.item_title>.sales{
+    font-size: 17px;
+    line-height: 25px;
+}
+.item_child>.item_child_left>.scheme{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 20px;
+    color: #8a8000;
+}
+.item_child>.item_child_right>.buy_button{
+    color: #fff;
+    text-decoration: none;
+    background-color: #8a8000;
+    margin-left: 110px;
+    margin-top: 20px;
+    padding: 7px;
+    padding-top: 8px;;
+    border-radius: 14px;
+    display: block;
+    text-align: center;
+}
+.item_child>.item_child_right>.buy_button:hover{
+    background-color: black;
+}
+.h2_style{
+    margin-top: -4px;
+}
+
 @media(max-width:992px){
+    .outside_div>nav>ul{
+        flex-direction: column;
+    }
     .outside_div>nav>ul>li{
         width: 100%;
+    }
+    .outside_div>nav>ul>li:hover{
+
     }
 }
